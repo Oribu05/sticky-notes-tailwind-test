@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles/styles.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>To-Do List</title>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+<!-- or -->
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+</head>
+
+<body class="bg-blue-200">
+    <main class="justify-center grid align-center text-center p-5">
+        <h1
+            class="mb-5 text-4xl font-extrabold tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-blue-600">
+            Sticky Notes
+        </h1>
+        <hr class="text-blue-500">
+        <div class="relative mt-3">
+            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="white" class="size-6 text-light">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                </svg>
+            </div>
+            <input type="text" id="new-task"
+                class="block w-full p-4 ps-10 text-sm text-light-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-blue-500 dark:border-blue-600 dark:placeholder-white-500 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Agregar tarea" />
+        </div>
+    </main>
+
+    <section class="flex justify-center items-center p-5">
+        <div id="task-list" class="task-list w-full max-w-6xl p-5">
+          <!-- Aquí se insertarán las cards -->
+        </div>
+      </section>
+      
+
+
+    <script src="/src/js/script.js"></script>
+</body>
+
+</html>
